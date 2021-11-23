@@ -1,7 +1,7 @@
 import Navigation from './components/Navigation';
 import Profile from './components/Profile';
-import TweetList from './components/TweetList';
 import TweetForm from './components/TweetForm';
+import TweetList from './components/TweetList';
 import './App.css'
 
 
@@ -10,8 +10,10 @@ function App() {
     <div className="App">
       <Navigation /> 
       <Profile />
-      <TweetList />
+      <main className="container">
       <TweetForm />
+      <TweetList />
+      </main>
     </div>
   );
 }
